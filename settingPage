@@ -8,34 +8,56 @@
 </head>
 <style>
   table, td {
-    width: 50%; border: 2px solid #000; border-collapse: collapse;
-    padding: 10px; text-align: center; background-color: #d4feff;
+    width: 1fr; border: 2px solid #000; border-collapse: collapse;
+    padding: 10px; text-align: center; background-color: #fffed2;
   }
   th {
-    width: 50%; border: 2px solid #000; border-collapse: collapse;
-    padding: 10px; text-align: center;  background-color: #88ecf0;
+    width: 100px; border: 2px solid #000; border-collapse: collapse;
+    padding: 10px; text-align: center;  background-color: #b2f9fc;
   }
 </style>
-<body>
-  <h1>관리자 페이지</h1>
-  <input type="botton" value=“+추가” onclick="alert('comming soon')">
-  <div>
-    <table>
-      <th>순</th>
+<script>
+  var numTable = 1
+  var tableSample = <table>
+      <th colspan="2">순</th>
       <th colspan="2">퀴즈</th>
       <th colspan="2">답</th>
       <tr>
-        <td rowspan="2">1</td>
-        <td colspan="2"><input type="text"></td>
-        <td colspan="2"><input type="text"></td>
+        <td>document.write(numTable)</td>
+        <td colspan="2"><input type="text"></input></td>
+        <td colspan="2"><input type="text"></input></td>
       </tr>
       <tr>
-        <td>사진 <input type="checkbox"></td>
-        <td>지도 <input type="checkbox"></td>
-        <td>QR코드 <input type="checkbox"></td>
-        <td>추가 <input type="checkbox"></td>
+        <td>추가자료제공방법:</td>
+        <td>사진 <input type="checkbox"></input></td>
+        <td>지도 <input type="checkbox"></input></td>
+        <td>QR코드 <input type="checkbox"></input></td>
+        <td>적용 <input type="button"></input></td>
       </tr>
     </table>
+</script>
+<body>
+  <h1>관리자 페이지</h1>
+  <input type="botton" value="저장하기" onclick="alert('comming soon')"></input>
+  <div>
+    <table>
+      <th colspan="2">순</th>
+      <th colspan="2">퀴즈</th>
+      <th colspan="2">답</th>
+      <tr>
+        <td>document.write(numTable)</td>
+        <td colspan="2"><input type="text"></input></td>
+        <td colspan="2"><input type="text"></input></td>
+      </tr>
+      <tr>
+        <td>추가자료제공방법:</td>
+        <td>사진 <input type="checkbox"></input></td>
+        <td>지도 <input type="checkbox"></input></td>
+        <td>QR코드 <input type="checkbox"></input></td>
+        <td><input type="button" value="적용"></input></td>
+      </tr>
+    </table>
+    <input type="botton" value="+퀴즈추가" onclick="alert('comming soon')"></input>
   </div>
 </body>
 </html>
