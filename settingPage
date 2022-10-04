@@ -15,6 +15,10 @@
     width: 100px; border: 2px solid #000; border-collapse: collapse;
     padding: 10px; text-align: center;  background-color: #b2f9fc;
   }
+  #save {
+    display: flex;
+    justify-content: space-between;
+  }
 </style>
 <script>
   var numTable = 1
@@ -38,7 +42,10 @@
 </script>
 <body>
   <h1>관리자 페이지</h1>
-  <input type="botton" value="저장하기" onclick="alert('comming soon')"></input>
+  <div id="save">
+    <input type="button" value="저장하기" float="right" onclick="alert('comming soon')"></input>
+  </div>
+  
   <div>
     <table>
       <th colspan="2">순</th>
@@ -57,7 +64,7 @@
         <td><input type="button" value="적용"></input></td>
       </tr>
     </table>
-    <input type="botton" value="+퀴즈추가" onclick="alert('comming soon')"></input>
+    <input type="button" value="+퀴즈추가" onclick="alert('comming soon')"></input>
   </div>
 </body>
 </html>
