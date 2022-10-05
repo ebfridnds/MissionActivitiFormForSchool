@@ -22,49 +22,32 @@
 </style>
 <script>
   var numTable = 1
-  var tableSample = <table>
-      <th colspan="2">순</th>
-      <th colspan="2">퀴즈</th>
-      <th colspan="2">답</th>
-      <tr>
-        <td>document.write(numTable)</td>
-        <td colspan="2"><input type="text"></input></td>
-        <td colspan="2"><input type="text"></input></td>
-      </tr>
-      <tr>
-        <td>추가자료제공방법:</td>
-        <td>사진 <input type="checkbox"></input></td>
-        <td>지도 <input type="checkbox"></input></td>
-        <td>QR코드 <input type="checkbox"></input></td>
-        <td>적용 <input type="button"></input></td>
-      </tr>
-    </table>
+  var tableSample = "" // 추가버튼 시 입력되는 퀴즈 묶음을 저장할 곳
 </script>
 <body>
+  <form action="">
   <h1>관리자 페이지</h1>
-  <div id="save">
-    <input type="button" value="저장하기" float="right" onclick="alert('comming soon')"></input>
-  </div>
-  
-  <div>
+  <input type="submit" value="저장하기"
     <table>
-      <th colspan="2">순</th>
+      <th style="background-color:bisque">Quiz_Num</th>
       <th colspan="2">퀴즈</th>
       <th colspan="2">답</th>
       <tr>
         <td>document.write(numTable)</td>
-        <td colspan="2"><input type="text"></input></td>
-        <td colspan="2"><input type="text"></input></td>
+        <td colspan="2"><input type="text"></td>
+        <td colspan="2"><input type="text"></td>
       </tr>
       <tr>
-        <td>추가자료제공방법:</td>
-        <td>사진 <input type="checkbox"></input></td>
-        <td>지도 <input type="checkbox"></input></td>
-        <td>QR코드 <input type="checkbox"></input></td>
-        <td><input type="button" value="적용"></input></td>
+        <td colspan="5">제공할 보조자료 선택</td>
+      </tr>
+      <tr>
+        <td>사진 <input type="checkbox"></td>
+        <td>지도 <input type="checkbox"></td>
+        <td>QR코드 <input type="checkbox"></td>
+        <td><input type="button" value="적용"></td>
       </tr>
     </table>
-    <input type="button" value="+퀴즈추가" onclick="alert('comming soon')"></input>
-  </div>
+  <input type="button" value="+퀴즈추가" onclick="alert('tableSample을 이용하여 퀴즈내용 추가')"></input>
+
 </body>
 </html>
